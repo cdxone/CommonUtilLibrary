@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="comutil_bits_per_second">%.0f bit/s</string>
+    <string name="comutil_kbits_per_second">%.1f kbit/s</string>
+    <string name="comutil_mbits_per_second">%.1f Mbit/s</string>
+    <string name="comutil_gbits_per_second">%.1f Gbit/s</string>
+    <string name="comutil_volume_byte">%.0f B</string>
+    <string name="comutil_volume_kbyte">%.1f kB</string>
+    <string name="comutil_volume_mbyte">%.1f MB</string>
+    <string name="comutil_volume_gbyte">%.1f GB</string>
+</resources>

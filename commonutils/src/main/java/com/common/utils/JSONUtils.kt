@@ -1,14 +1,12 @@
-package com.common.utils
+package com.common.utils;
 
-import android.util.Log
+import com.common.utils.LogUtils
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
 open class JSONUtils {
 
     companion object {
-
-        var TAG = "JSONUtils"
 
         /**
          * 将json格式字符串转换为List<对象>形式
@@ -23,7 +21,7 @@ open class JSONUtils {
                 val type = object : TypeToken<T>() {}.type
                 return Gson().fromJson(json, type)
             } catch (e: Exception) {
-                Log.e(TAG, "解析json->obj出现错误,$e,$json")
+                LogUtils.e("解析json->obj出现错误,$e,$json")
                 return null
             }
         }
@@ -48,7 +46,7 @@ open class JSONUtils {
             try {
                 result = Gson().toJson(obj)
             } catch (e: Exception) {
-                Log.e(TAG, "转换JSON失败：" + obj.toString() + "," + e.toString())
+                LogUtils.e("转换JSON失败：" + obj.toString() + "," + e.toString())
             }
             return result
         }
