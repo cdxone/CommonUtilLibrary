@@ -50,7 +50,7 @@ class CommonWebView : WebView {
         //webSetting.setJavaScriptCanOpenWindowsAutomatically(true)
 //        webSetting.allowFileAccess = true
 //        webSetting.layoutAlgorithm = WebSettings.LayoutAlgorithm.NARROW_COLUMNS
-//        webSetting.setSupportZoom(true)
+        webSetting.setSupportZoom(true)
         //webSetting.builtInZoomControls = false
 //        //webSetting.useWideViewPort = true
 //        webSetting.setSupportMultipleWindows(true)
